@@ -1,2 +1,8 @@
-<style> 
+h1{ color: pink;} 
+.veggies { color:darkgreen;}
+.other { color=rgb(124,43,12);} 
+.meat { color:darkred;} 
+.grains{color:brown;}  
+.fruit {color:red;}
 
+li#need {text-decoration: line through;} 
