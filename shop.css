@@ -1,8 +1,10 @@
-h1{ color: pink;} 
-.veggies { color:darkgreen;}
-.other { color=balck ;} 
-.meat { color:darkred;} 
-.grains{color:brown;}  
-.fruit {color:red;}
+h1 {color:pink;} 
+.veggies {color:darkgreen;}
+.other {color=balck ;} 
+.meat {color:darkred;} 
+.grains {color:brown;}  
+.fruit {color:red;} 
+
+li#need {text-decoration:line-through;}
 
 
