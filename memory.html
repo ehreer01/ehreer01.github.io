@@ -23,6 +23,32 @@ nav:hover .question {display:none; }
   background-color: red;
   z-index:-3;
   }
+  
+  nav:hover .question #bonjovi {display:none; }
+  .question 
+  {position:relative;
+   height:200px;
+  width: 150px ;
+  border: 10px dotted;
+  border-radius:10px;
+  background-color: green; 
+    top: 20px;
+    right: 100px;
+} 
+
+.answer #bonjovi{ 
+  position:absolute;
+  height:200px;
+  width: 150px ;
+  border: 10px dotted;
+  background-color: red;
+  z-index:-3;
+top: 20px;
+    right: 100px;
+}
+  
+   
+  }         
 </style>
 
 <body>
@@ -35,6 +61,14 @@ nav:hover .question {display:none; }
 </section>
 </nav>
 
+nav>
+<section class="question" id="bonjovi"> 
+<p> Who is the  lead singer of Bon Jovi? </p>
+</section>
+<section class="answer" id="bonjovi">
+ Jon Bon Jovi
+</section>
+</nav>
 
 
  
