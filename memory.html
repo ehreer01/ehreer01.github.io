@@ -46,11 +46,11 @@ nav:hover .question {display:none; }
 <script type="text/javascript"> 
  counter = 0
  updateCounter = function(cbID) { 
-  theCheckbox = document.querySelector("#"+cbID);
+  theCheckbox = document.querySelector("#" +cbID);
   if (theCheckbox.checked) { counter = counter + 1; 
-  } else { counter = counter -1; }
+  } else { counter = counter - 1; }
   
-  countSpot = document.querySelector('#myCounter'); 
+  countSpot = document.querySelector('#myCounter')
   countSpot.innerHTML = "Correct: " + counter; 
  }
  
