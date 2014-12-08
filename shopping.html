@@ -17,9 +17,9 @@
 
 
 <select id="priority">
-    <option></option>
-    <option></option>
-    <option></option>
+    <option>Meats</option>
+    <option>Veggies</option>
+    <option>Produce</option>
 </select>
 
  <button onclick=addItem() > Add </button>
@@ -28,8 +28,9 @@
 
  <script>
   addItem = function() { 
-  addItem = document.querySelector('additem').value; 
-  listItem = document.createElement("li")
+  myUL = document.querySelector('thelist'); 
+  myTextbox= document.querySelector("additem")
+  myLi = document.createElement("li")
   
    
   }
