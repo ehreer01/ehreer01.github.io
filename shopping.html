@@ -16,7 +16,7 @@
 
 <input type="text" id='addobject' >
 
-<select id="priority">
+<select id="dropdown">
     <option>Meats</option>
     <option>Veggies</option>
     <option>Produce</option>
@@ -31,15 +31,17 @@
   addItem = function() { 
   myUL = document.querySelector('#thelist'); 
   myTextbox= document.querySelector("#addobject")
+  dropdown = document.querySelector('#dropdown')
   myLi = document.createElement("li")
   cb = document.createElement("input")
   cb.type = 'checkbox'
+  myLi.ClassList.add(dropdown).value
   myFoodList = document.createTextNode(myTextbox.value);
   myLi.appendChild(cb)
   myLi.appendChild(myFoodList);
   myUL.appendChild(myLi) 
   mytextbox.value = "";
- 
+  
   }
   
  </script>
