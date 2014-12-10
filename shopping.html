@@ -31,11 +31,14 @@
   myUL = document.querySelector('#thelist'); 
   myTextbox= document.querySelector("#addobject")
   myLi = document.createElement("li")
+  cb = document.createElement("input")
+  cb.type = checkbox
   myFoodList = document.createTextNode(myTextbox.value);
+  myLi.appendChild(cb)
   myLi.appendChild(myFoodList);
   myUL.appendChild(myLi) 
   mytextbox.value = "";
-   
+ 
   }
   
  </script>
