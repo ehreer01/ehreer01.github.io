@@ -35,7 +35,7 @@
   myLi = document.createElement("li")
   cb = document.createElement("input")
   cb.type = 'checkbox'
-  dropdown.classList.add('dropdown').value
+  myLi.classList.add(dropdown.value); 
   myFoodList = document.createTextNode(myTextbox.value);
   myLi.appendChild(cb)
   myLi.appendChild(myFoodList);
