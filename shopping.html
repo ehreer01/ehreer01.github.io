@@ -37,6 +37,7 @@
   myLi = document.createElement("li")
   cb = document.createElement("input")
   cb.type = 'checkbox'
+  cb.onclick = doneTask;
   myLi.classList.add(dropdown.value); 
   myFoodList = document.createTextNode(myTextbox.value);
   myLi.appendChild(cb)
@@ -44,10 +45,10 @@
   myUL.appendChild(myLi) 
   ul.classlist.add(dropdown.value)
   mytextbox.value = "";
-  window.onload = function() { restoreList('thelist',doneTask) };
+ 
   }
   doneTask = function() {
-    // this is the box that was clicked
+   
     if (this.checked) {
         this.parentNode.classList.add("done");
     } else {
@@ -56,6 +57,7 @@
 
     localSave('thelist')
 
+ window.onload = function() { restoreList('thelist',doneTask) };
  </script>
  
   
