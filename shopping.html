@@ -44,9 +44,18 @@
   myUL.appendChild(myLi) 
   ul.classlist.add(dropdown.value)
   mytextbox.value = "";
-  window.onload = function() { restoreList('grocerylist',doneTask) };
+  window.onload = function() { restoreList('thelist',doneTask) };
   }
-  
+  doneTask = function() {
+    // this is the box that was clicked
+    if (this.checked) {
+        this.parentNode.classList.add("done");
+    } else {
+      this.parentNode.classList.remove("done");
+    }
+
+    localSave('thelist')
+
  </script>
  
   
